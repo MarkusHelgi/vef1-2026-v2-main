@@ -166,7 +166,9 @@ nav a:focus {
   font-weight: bold;
   text-decoration: underline;
 }
-
+nav strong {
+  text-decoration: underline;
+}
 /** Meginmál **/
 
 main {
