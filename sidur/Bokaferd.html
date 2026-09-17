@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Bókaðu ferðina þína hjá okkur." />
+    <meta property="og:title" content="Bóka ferð" />
+    <meta property="og:description" content="Bókaðu ferðina þína hjá okkur." />
+    <meta property="og:image" content="../myndir/seljalandsfoss.jpg" />
+    <title>Bóka ferð</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bóka ferð</h1>
+      <p><a href="#efnid" class="sr-only ">Beint í efni</a></p>
+    </header>
+      <nav>
+        <a href="../index.html">Forsíða</a>
+        <a href="um.html">Um fyrirtækið</a>
+        <a href="ferdir.html">Ferðir</a>
+       <strong>Skráning í ferð</strong>
+      </nav>
+    <main id="efnid">
+      <p>Hér getur þú bókað ferð með okkur.</p>
+      <form>
+        <fieldset>
+          <legend>Ferð</legend>
+          <label for="trip">Veldu ferð:</label>
+          <select id="trip" name="trip" required>
+            <option value="">Veldu ferð</option>
+            <option value="ice_climbing">Jöklaklifur</option>
+            <option value="cozy_walk_south_coast">
+              Róleg gönguferð á suðurlandi
+            </option>
+            <option value="golden_circle">Gullhringurinn</option>
+            <option value="silver_box">Silfurkassinn</option>
+            <option value="bronze_triangle">Bronsþríhyrningurinn</option>
+            <option value="diving">Köfunarferð</option>
+            <option value="northern_lights">Norðurljósaferð</option>
+            <option value="walking_reykjavik">Reykjavíkurrölt</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Hópur</legend>
+          <label for="email">Netfang tengiliðar:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone">Símanúmer:</label>
+          <input type="tel" id="phone" name="phone" />
+          <label for="group_size">Fjöldi í hóp:</label>
+          <input
+            type="number"
+            id="group_size"
+            name="group_size"
+            min="1"
+            max="16"
+            required
+          />
+          <label for="info">Upplýsingar um hóp:</label>
+          <textarea
+            id="info"
+           name="info"
+           placeholder="Hver er reynsla hópsins?"
+           required
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Dagsetning og tími</legend>
+          <label for="date">Hvenær viljið þið koma:</label>
+          <input type="date" id="date" name="date" required />
+          <label for="time">Hvaða tíma:</label>
+          <select id="time" name="time" required>
+            <option value="">Veldu tíma</option>
+            <option value="morning">Fyrir hádegi</option>
+            <option value="afternoon">Eftir hádegi</option>
+            <option value="evening">Kvöld</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Bóka</legend>
+          <label for="terms"
+            >Ég samþykki
+            <a href="um.html" target="_blank">skilmála og skilyrði</a>:</label
+          >
+          <input type="checkbox" id="terms" name="terms" required />
+          <button type="submit" class="button">Panta og greiða</button>
+        </fieldset>
+      </form>
+      <a href="../index.html">Aftur á forsíðu</a>
+    </main>
+    <footer>
+  <div class="footer-content">
+    <div>
+      <h2>Opnunartímar</h2>
+      <h3>Skrifstofur</h3>
+      <ul>
+        <li>Mánudaga til föstudaga: 12:00-18:00</li>
+        <li>Laugardagar: 14:00-16:00</li>
+        <li>Sunnudagar: Lokað</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Hafðu samband</h2>
+      <ul>
+        <li>Ferðaþjónustufyrirtækið</li>
+        <li>Ferðagata 1</li>
+        <li>101 Reykjavík</li>
+        <li>Sími 234-2345</li>
+        <li>ferdathjonustufyrirtaekid@example.org</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Samfélagsmiðlar</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/HaskoliIslands/">Facebook</a></li>
+        <li><a href="https://www.instagram.com/haskoli_islands/">Instagram</a></li>
+        <li><a href="https://www.youtube.com/user/HIvarp/">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
