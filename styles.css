@@ -254,6 +254,7 @@ main > p {
 
 main img {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 /* TODO */
